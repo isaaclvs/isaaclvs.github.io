@@ -5,7 +5,7 @@ template_engine: liquid
 
 # Other options you might want to investigate:
 #
-base_path: "/my-portfolio"
+base_path: "/"
 
 
 # timezone: America/Los_Angeles
