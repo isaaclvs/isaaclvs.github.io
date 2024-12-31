@@ -1,11 +1,11 @@
-url: "" # the base hostname & protocol for your site, e.g. https://example.com
+url: "https://isaaclvs.github.io"
 
 permalink: pretty
 template_engine: liquid
 
 # Other options you might want to investigate:
 #
-base_path: "/"
+# base_path: "/"
 
 
 # timezone: America/Los_Angeles
