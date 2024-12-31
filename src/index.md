@@ -20,7 +20,20 @@ layout: default
 - **Tools**: Linux, Docker, Git, Insomnia
 
 ## About Me
-Software engineer with a strong background in web development, specializing in Ruby on Rails. Currently pursuing a Bachelor's in Computer Science at Federal Institute of Piauí.
+Software engineer with a strong background in web development, specializing in Ruby on Rails. Experienced in developing scalable backend systems and optimizing application performance.
+
+## Recent Experience
+
+### Fetchly Labs | Software Developer
+**2024**
+- Optimized backend performance by 20% using Ruby on Rails
+- Improved frontend with Vue.js and Tailwind CSS
+- **Tech**: Rails, Vue.js, PostgreSQL
+
+### Federal Institute of Piaui | Software Engineer Intern
+**2023-2024**
+- Enhanced system speed by 30% with scalable solutions
+- **Tech**: Rails, React.js, SQL
 
 ### Professional Highlights
 - Enhanced application performance by 20% through backend optimizations
@@ -31,8 +44,8 @@ Software engineer with a strong background in web development, specializing in R
 
 ### Medical Office Management System
 - **Description**: Complete patient management system with role-based access
-- **Tech Stack**: Ruby on Rails, Devise, Tailwind CSS
-- **Features**: Multi-user roles, responsive design
+- **Tech Stack**: Ruby on Rails, PostgreSQL, Devise, Pundit, Chartkick, Tailwind CSS
+- **Features**: Multi-user roles, data visualization, authorization control, responsive design
 - [View Project](https://github.com/isaaclvs/hospital-management){:target="_blank" rel="noopener noreferrer"}
 
 ### URL Shortener
