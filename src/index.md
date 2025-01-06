@@ -49,10 +49,11 @@ Software engineer with a strong background in web development, specializing in R
 - [View Project](https://github.com/isaaclvs/hospital-management){:target="_blank" rel="noopener noreferrer"}
 
 ### URL Shortener
-- **Description**: A robust URL shortening service built with performance in mind
-- **Tech Stack**: Ruby on Rails, Vue.js, Tailwind CSS
-- **Achievements**: 50% reduction in page load times
-- [View Project](https://github.com/isaaclvs/RailsUrlShortener){:target="_blank" rel="noopener noreferrer"}
+- **Description**: A simple and efficient URL shortener that generates unique 6-character short URLs and tracks access statistics.
+- **Tech Stack**: Ruby (Sinatra), MySQL, TailwindCSS, Docker & Docker Compose
+- **Achievements**: Implemented efficient database indexing and reduced application overhead using Docker, achieving seamless scalability.
+- [View Project](https://github.com/isaaclvs/url-shortener){:target="_blank" rel="noopener noreferrer"}
+
 
 ## Let's Connect
 - 📧 [dev.isaaclvs@gmail.com](mailto:dev.isaaclvs@gmail.com)
