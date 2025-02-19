@@ -1,4 +1,4 @@
-name: Deploy to GitHub pages
+name: Deploy to GitHub Pages
 
 on:
   push:
@@ -29,8 +29,9 @@ jobs:
         run: bin/bridgetown deploy
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
+          name: build-output
           path: ./output
 
   deploy:
@@ -46,6 +47,12 @@ jobs:
 
     runs-on: ubuntu-latest
     steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: build-output
+          path: ./output
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
