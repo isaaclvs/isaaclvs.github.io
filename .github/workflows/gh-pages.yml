@@ -1,4 +1,4 @@
-name: Deploy to GitHub pages
+name: Deploy Bridgetown to GitHub Pages
 
 on:
   push:
@@ -6,46 +6,26 @@ on:
       - main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
 
-      - name: Setup Ruby
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Ruby and Bridgetown
         uses: ruby/setup-ruby@v1
         with:
+          ruby-version: 3.2
           bundler-cache: true
 
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: "16"
-          cache: "yarn"
-      - run: yarn install
+      - name: Build site
+        run: |
+          export BRIDGETOWN_ENV=production
+          bundle exec bridgetown deploy
 
-      - name: Build
-        env:
-          BRIDGETOWN_ENV: production
-        run: bin/bridgetown deploy
-
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./output
-
-  deploy:
-    needs: build
-
-    permissions:
-      pages: write
-      id-token: write
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
