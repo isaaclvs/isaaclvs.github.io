@@ -27,6 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install
+          bundle lock --add-platform x86_64-linux
           bundle install
 
       - name: Build with Bridgetown
@@ -34,12 +35,11 @@ jobs:
           BRIDGETOWN_ENV: production
         run: |
           bin/bridgetown deploy
-          ls -R ./output  # Exibir os arquivos gerados para depuração
+          ls -R ./output  # Verificar se os arquivos foram gerados corretamente
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-pages-artifact@v2
         with:
-          name: bridgetown-output
           path: ./output
 
   deploy:
@@ -48,13 +48,6 @@ jobs:
     permissions:
       pages: write
       id-token: write
-      contents: read
     steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: bridgetown-output
-          path: ./output
-
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
