@@ -42,9 +42,10 @@ jobs:
           ls -R ./output
 
       - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./output
+          name: github-pages
 
   deploy:
     needs: build
