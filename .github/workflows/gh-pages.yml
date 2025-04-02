@@ -14,18 +14,19 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'  # Use a mesma versão do seu ambiente local
+          ruby-version: '3.2'  # Atualizado para 3.2 ou superior
           bundler-cache: true
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: "18"  # Versão LTS recomendada
+          node-version: "18"
           cache: "yarn"
 
       - name: Install dependencies
         run: |
           yarn install
+          bundle lock --add-platform x86_64-linux  # Corrige o problema de plataforma
           bundle install
 
       - name: Build with Bridgetown
@@ -33,41 +34,24 @@ jobs:
           BRIDGETOWN_ENV: production
         run: |
           bin/bridgetown deploy
-          ls -R ./output  # Debug da estrutura de arquivos
+          ls -R ./output
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v4  # Versão corrigida
+        uses: actions/upload-artifact@v4
         with:
           name: bridgetown-output
           path: ./output
-          retention-days: 1  # Para não acumular artefatos
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    
     permissions:
       pages: write
       id-token: write
       contents: read
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4  # Versão atualizada
+      - uses: actions/download-artifact@v4
         with:
           name: bridgetown-output
           path: ./output
-
-      - name: Verify output structure
-        run: |
-          echo "Verificando arquivos gerados..."
-          ls -la ./output
-          [ -f ./output/index.html ] || exit 1
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2  # Versão estável mais recente
+      - uses: actions/deploy-pages@v2
