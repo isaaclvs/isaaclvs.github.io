@@ -19,6 +19,9 @@ jobs:
           ruby-version: 3.2
           bundler-cache: true
 
+      - name: Install Node.js dependencies
+        run: yarn install --frozen-lockfile  # <-- Adicionado aqui!
+
       - name: Build site
         run: |
           export BRIDGETOWN_ENV=production
