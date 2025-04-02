@@ -53,5 +53,5 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: ./output
+          path: .
       - uses: actions/deploy-pages@v2
