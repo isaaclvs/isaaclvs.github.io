@@ -5,6 +5,11 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -35,9 +40,9 @@ jobs:
           BRIDGETOWN_ENV: production
         run: |
           bin/bridgetown deploy
-          ls -R ./output  # Verificar se os arquivos foram gerados corretamente
+          ls -R ./output  # Verifica se os arquivos foram gerados
 
-      - name: Upload build artifact
+      - name: Upload build artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./output
@@ -45,9 +50,6 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
     steps:
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
