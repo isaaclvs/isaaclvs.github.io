@@ -9,18 +9,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4  # Atualizado para versão mais recente
+      - uses: actions/checkout@v4
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'  # Especifique a versão do Ruby
+          ruby-version: '3.1'  # Use a mesma versão do seu ambiente local
           bundler-cache: true
 
       - name: Setup Node
-        uses: actions/setup-node@v3  # Versão atualizada
+        uses: actions/setup-node@v3
         with:
-          node-version: "18"  # Recomendo atualizar para LTS mais recente
+          node-version: "18"  # Versão LTS recomendada
           cache: "yarn"
 
       - name: Install dependencies
@@ -33,13 +33,14 @@ jobs:
           BRIDGETOWN_ENV: production
         run: |
           bin/bridgetown deploy
-          ls -R ./output  # Debug diretamente na mesma etapa
+          ls -R ./output  # Debug da estrutura de arquivos
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Versão corrigida
         with:
           name: bridgetown-output
           path: ./output
+          retention-days: 1  # Para não acumular artefatos
 
   deploy:
     needs: build
@@ -48,7 +49,7 @@ jobs:
     permissions:
       pages: write
       id-token: write
-      contents: read  # Permissão adicional necessária
+      contents: read
 
     environment:
       name: github-pages
@@ -56,13 +57,17 @@ jobs:
 
     steps:
       - name: Download artifact
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4  # Versão atualizada
         with:
           name: bridgetown-output
           path: ./output
 
+      - name: Verify output structure
+        run: |
+          echo "Verificando arquivos gerados..."
+          ls -la ./output
+          [ -f ./output/index.html ] || exit 1
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  # Versão mais recente
-        with:
-          artifact_name: bridgetown-output  # Nome deve bater com o upload
+        uses: actions/deploy-pages@v2  # Versão estável mais recente
