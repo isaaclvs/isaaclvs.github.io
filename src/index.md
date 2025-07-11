@@ -1,13 +1,11 @@
 ---
 layout: default
 ---
-
 <div class="hero-section">
   <img src="/images/profile.jpg" alt="Isaac Alves" class="profile-image">
   
   <h1>Hi, I'm Isaac Alves</h1>
-  <h2>Software Engineer | Full Stack Developer</h2>
-
+  <h2>Software Engineer | Backend Developer</h2>
   <p>🚀 Passionate about building scalable applications and optimizing system performance. Experienced in backend development, API design, and frontend engineering.</p>
 </div>
 
@@ -25,50 +23,51 @@ Software engineer with a strong background in web development, specializing in R
 
 ### Big Data Health | Software Engineer
 **Jan 2025 — Present**
-- Developed and maintained scalable applications using Ruby on Rails.
-- Implemented automated tests to enhance system reliability.
-- Refactored legacy code to improve performance and maintainability.
-- Collaborated with product teams to ensure technical solutions met business needs.
-- **Tech**: Rails, PostgreSQL, Docker, Kubernetes, Redis, Sidekiq, Sentry
+- Refactored legacy Ruby on Rails code (v4.2) into modular services, increasing maintainability and testability across the system.
+- Improved test coverage and reliability by implementing RSpec and FactoryBot in legacy areas.
+- Collaborated with DevOps to streamline deployments using Docker, Azure Pipelines, and Kubernetes.
+- Participated in code reviews and agile planning, improving team velocity and technical consistency.
+- **Tech**: Ruby on Rails, PostgreSQL, Docker, Kubernetes, Redis, Sidekiq, Sentry
 
 ### Fetchly Labs | Software Engineer
-**May 2024 — Nov 2024**
-- Built and maintained APIs for SaaS products, ensuring scalability and security.
-- Enhanced frontend features using Vue.js and Tailwind CSS.
-- Contributed to software architecture decisions and best practices.
-- **Tech**: Rails, PostgreSQL, REST API, Docker, Tailwind CSS, Vue.js
+**May 2023 — Dec 2024**
+- Built and maintained backend services in Ruby on Rails, focusing on performance and scalability.
+- Delivered customer-facing features with Vue.js and Tailwind CSS, improving UX and engagement.
+- Participated in database optimization and API design to support growing user needs.
+- Enhanced team productivity through pair programming and collaborative debugging sessions.
+- **Tech**: Ruby on Rails, PostgreSQL, REST API, Docker, Tailwind CSS, Vue.js
 
 ### Federal Institute of Piaui | Software Engineer Intern
-**Jun 2022 — Dec 2023**
-- Developed features for an educational platform, improving distance and in-person training.
-- Integrated third-party services via RESTful APIs.
-- Enhanced system reliability with automated tests using RSpec.
-- **Tech**: Rails, SQLite3, Tailwind CSS
+**Jun 2022 — Jun 2023**
+- Developed and deployed internal systems using Ruby on Rails to support academic and administrative workflows.
+- Designed intuitive user interfaces with Tailwind CSS, enhancing usability for non-technical users.
+- Promoted clean code practices and teamwork in cross-functional student projects.
+- Gained solid experience working with SQL databases, Git workflows, and Linux environments.
+- **Tech**: Ruby on Rails, SQLite3, Tailwind CSS
 
 ## Featured Projects
 
 ### Payment System - API
-- **Description**: Robust payment API integrating Mercado Pago and PagSeguro with an automatic fallback system.
+- **Description**: Robust payment processing API integrating Mercado Pago and PagSeguro with an automatic fallback system to ensure high transaction reliability. Implemented JWT-based authentication and role-based access control.
 - **Tech Stack**: Ruby on Rails, PostgreSQL, JWT, Mercado Pago API, PagSeguro API, RSpec
 - [View Project](https://github.com/isaaclvs/payment-system-api){:target="_blank" rel="noopener noreferrer"}
 
 ### Payment System - Frontend
-- **Description**: React-based frontend for payment processing with a responsive UI and real-time updates.
+- **Description**: React-based frontend for a payment processing system, featuring a responsive user-friendly payment form and an admin dashboard for transaction tracking. Implemented real-time payment status updates and secure credit card handling.
 - **Tech Stack**: React.js, Tailwind CSS, REST API, Webhooks
 - [View Project](https://github.com/isaaclvs/payment-system-frontend){:target="_blank" rel="noopener noreferrer"}
 
 ### Hospital Manager
-- **Description**: Medical office management system with role-based access control.
-- **Tech Stack**: Ruby on Rails, PostgreSQL, RBAC
+- **Description**: Medical Office Management System using Ruby on Rails, implementing role-based access for doctors and receptionists. Integrated appointment scheduling and patient record management.
+- **Tech Stack**: Ruby on Rails, PostgreSQL, Role-Based Access Control (RBAC)
 - [View Project](https://github.com/isaaclvs/hospital-management){:target="_blank" rel="noopener noreferrer"}
 
 ### URL Shortener
-- **Description**: Scalable URL shortener with unique short URL generation and analytics.
+- **Description**: Scalable URL Shortener using Ruby, Sinatra, and MySQL, featuring unique 6-character URL generation, access tracking, and analytics for monitoring link performance.
 - **Tech Stack**: Ruby, Sinatra, MySQL, REST API
 - [View Project](https://github.com/isaaclvs/url-shortener){:target="_blank" rel="noopener noreferrer"}
 
 ## Education
-- **Unintese Educational Center** - Bachelor's in Software Engineering (2020 — 2024)
 - **Federal Institute of Piaui** - Technician in System Development (2021 — 2023)
 
 ## Let's Connect
@@ -77,4 +76,4 @@ Software engineer with a strong background in web development, specializing in R
 - 💻 [GitHub](https://github.com/isaaclvs){:target="_blank" rel="noopener noreferrer"}
 - 📱 +55 86 99980-4586
 
-[Download Resume](https://drive.google.com/file/d/1dL9ULStdekgvmEqCDQqOP_SK2lP8B4tB/view?usp=sharing){: .resume-button target="_blank" rel="noopener noreferrer"}
+[Download Resume](https://drive.google.com/file/d/1aYnYtztYiWkEMSzhxC_iAVxr2WpFyZTI/view?usp=sharing){: .resume-button target="_blank" rel="noopener noreferrer"}
