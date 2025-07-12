@@ -4,6 +4,63 @@
 <title>{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}</title>
 
 <meta name="description" content="{{ metadata.description }}" />
+<meta name="keywords" content="Isaac Alves, Software Engineer, Backend Developer, Ruby on Rails, Vue.js, PostgreSQL, Web Development, API Design, Full Stack Developer" />
+<meta name="author" content="{{ metadata.title }}" />
+<meta name="robots" content="index, follow" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://isaaclvs.github.io/" />
+<meta property="og:title" content="{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}" />
+<meta property="og:description" content="{{ metadata.description }}" />
+<meta property="og:image" content="https://isaaclvs.github.io/images/profile.jpg" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://isaaclvs.github.io/" />
+<meta property="twitter:title" content="{% if resource_title != "Index" %}{{ resource_title | escape }} | {{ metadata.title | escape }}{% else %}{{ metadata.title | escape }}: {{ metadata.tagline | escape }}{% endif %}" />
+<meta property="twitter:description" content="{{ metadata.description }}" />
+<meta property="twitter:image" content="https://isaaclvs.github.io/images/profile.jpg" />
+
+<!-- Additional SEO -->
+<meta name="theme-color" content="#d64045" />
+<link rel="canonical" href="https://isaaclvs.github.io{% if resource.relative_url != '/' %}{{ resource.relative_url }}{% endif %}" />
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Isaac Alves",
+  "jobTitle": "Software Engineer",
+  "description": "Passionate Software Engineer specializing in backend development, API design, and scalable systems",
+  "url": "https://isaaclvs.github.io",
+  "image": "https://isaaclvs.github.io/images/profile.jpg",
+  "email": "dev.isaaclvs@gmail.com",
+  "sameAs": [
+    "https://linkedin.com/in/isaaclvs",
+    "https://github.com/isaaclvs"
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Big Data Health"
+  },
+  "knowsAbout": [
+    "Ruby on Rails",
+    "Vue.js",
+    "PostgreSQL",
+    "API Design",
+    "Backend Development",
+    "Web Development",
+    "Docker",
+    "Kubernetes"
+  ],
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Federal Institute of Piaui"
+  }
+}
+</script>
 
 <link rel="stylesheet" href="{% asset_path css %}" />
 <script src="{% asset_path js %}" defer></script>
