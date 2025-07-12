@@ -10,7 +10,7 @@ This is my personal portfolio and blog, built to showcase my experience as a Sof
 
 ## 🛠️ Tech Stack
 
-- **Framework**: [Bridgetown](https://www.bridgetownrb.com/) (Ruby-based static site generator)
+- **Framework**: [Bridgetown](https://www.bridgetownrb.com/){:target="_blank" rel="noopener noreferrer"} (Ruby-based static site generator)
 - **Frontend**: JavaScript (ES6) + CSS with PostCSS
 - **Templating**: Liquid
 - **Build Tool**: esbuild
