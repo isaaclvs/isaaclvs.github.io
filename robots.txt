@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://isaaclvs.github.io/sitemap.xml
+
+# Block development and build artifacts
+Disallow: /_bridgetown/
+Disallow: /node_modules/
