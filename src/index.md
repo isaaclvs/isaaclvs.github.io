@@ -47,6 +47,11 @@ Software engineer with a strong background in web development, specializing in R
 
 ## Featured Projects
 
+### Finance App
+- **Description**: Modern personal finance management application built with Ruby on Rails 8, featuring real-time transaction management, custom categories with color coding, and responsive design. Implements Hotwire (Turbo + Stimulus) for instant UI updates without page reloads and includes secure user authentication.
+- **Tech Stack**: Ruby on Rails 8, PostgreSQL, Hotwire (Turbo + Stimulus), TailwindCSS, Devise, RSpec, Docker, Kamal
+- [View Project](https://github.com/isaaclvs/finance-app){:target="_blank" rel="noopener noreferrer"}
+
 ### Payment System - API
 - **Description**: Robust payment processing API integrating Mercado Pago and PagSeguro with an automatic fallback system to ensure high transaction reliability. Implemented JWT-based authentication and role-based access control.
 - **Tech Stack**: Ruby on Rails, PostgreSQL, JWT, Mercado Pago API, PagSeguro API, RSpec
