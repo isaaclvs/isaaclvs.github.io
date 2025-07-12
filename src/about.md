@@ -40,6 +40,7 @@ I'm a Backend Developer specializing in web development and big data systems, wi
 
 ### Project Highlights
 
+- **Finance App**: Built modern personal finance management application with Ruby on Rails 8, featuring real-time updates via Turbo Streams, category management, and comprehensive transaction tracking with mobile-responsive design
 - **Payment System API**: Developed robust payment processing API integrating Mercado Pago and PagSeguro with automatic fallback system and JWT-based authentication
 - **Hospital Manager**: Created medical office management system with role-based access control for doctors and receptionists
 - **URL Shortener**: Built scalable URL shortener with unique 6-character generation, access tracking, and analytics using Ruby, Sinatra and MySQL
