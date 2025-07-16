@@ -31,7 +31,7 @@ I'm a Backend Developer specializing in web development and big data systems, wi
 - Enhanced team productivity through pair programming and collaborative debugging sessions
 - **Technologies**: Ruby on Rails, PostgreSQL, REST API, Docker, Tailwind CSS, Vue.js
 
-**Software Engineer Intern at Federal Institute of Piaui** (Jun 2022 - Jun 2023)
+**Software Engineer Intern at Federal Institute of Piaui** (Mar 2022 - Mar 2023)
 - Developed and deployed internal systems using Ruby on Rails to support academic and administrative workflows
 - Designed intuitive user interfaces with Tailwind CSS, enhancing usability for non-technical users
 - Promoted clean code practices and teamwork in cross-functional student projects

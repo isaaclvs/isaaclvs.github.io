@@ -38,7 +38,7 @@ Software engineer with a strong background in web development, specializing in R
 - **Tech**: Ruby on Rails, PostgreSQL, REST API, Docker, Tailwind CSS, Vue.js
 
 ### Federal Institute of Piaui | Software Engineer Intern
-**Jun 2022 — Jun 2023**
+**Mar 2022 — Mar 2023**
 - Developed and deployed internal systems using Ruby on Rails to support academic and administrative workflows.
 - Designed intuitive user interfaces with Tailwind CSS, enhancing usability for non-technical users.
 - Promoted clean code practices and teamwork in cross-functional student projects.
