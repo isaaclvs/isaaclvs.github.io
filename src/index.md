@@ -48,6 +48,8 @@ Software engineer with a strong background in web development, specializing in R
 ## Featured Projects
 
 ### Finance App
+🌐 **Live Site**: [Personal Finance Tracker](https://finance-app-irov.onrender.com/)
+
 - **Description**: Modern personal finance management application built with Ruby on Rails 8, featuring real-time transaction management, custom categories with color coding, and responsive design. Implements Hotwire (Turbo + Stimulus) for instant UI updates without page reloads and includes secure user authentication.
 - **Tech Stack**: Ruby on Rails 8, PostgreSQL, Hotwire (Turbo + Stimulus), TailwindCSS, Devise, RSpec, Docker, Kamal
 - [View Project](https://github.com/isaaclvs/finance-app){:target="_blank" rel="noopener noreferrer"}
