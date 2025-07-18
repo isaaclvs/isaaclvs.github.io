@@ -60,4 +60,4 @@ I'm a Backend Developer specializing in web development and big data systems, wi
 - API design and microservices architecture
 - Performance optimization and system monitoring
 
-[Download Resume](https://drive.google.com/file/d/1AgudvbdcNBSyUE2WCRQl_F_hlJec-CCz/view){: .resume-button target="_blank" rel="noopener noreferrer"}
+[Download Resume](https://drive.google.com/file/d/1avgcals3b-5rPNppphpdwbU0bvvJYoPb/view?usp=sharing){: .resume-button target="_blank" rel="noopener noreferrer"}
